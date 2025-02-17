@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Resources</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* Additional styles for resource pages */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .resource-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--secondary-color);
+    }
+
+    .resource-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .resource-title {
+      color: var(--primary-color);
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .category-heading {
+      color: var(--secondary-color);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .intro-text {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="roadmap-content">
+    <h1 style="text-align: center;"><strong><em>FrameWorks</em></strong></h1>
+    <p class="intro-text">Click on the images to access learning tutorials</p>
+
+    <!-- React Section -->
+    <div class="resource-section">
+      <h3 class="category-heading">HTML</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://scrimba.com/learn-react-c0e" target="_blank">
+            <img src="/Documentation/Images/react.png" alt="Learn React" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Learn React</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</body>
+</html>
