@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Resources</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* Additional styles for resource pages */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .resource-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--secondary-color);
+    }
+
+    .resource-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .resource-title {
+      color: var(--primary-color);
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .category-heading {
+      color: var(--secondary-color);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .intro-text {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="roadmap-content">
+    <h1 style="text-align: center;"><strong><em>Let's Get Started</em></strong></h1>
+    <p class="intro-text">Click on the images to access learning tutorials</p>
+
+    <!-- HTML Section -->
+    <div class="resource-section">
+      <h3 class="category-heading">HTML</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+            <img src="/Documentation/Images/html3.jpg" alt="Starting with HTML" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Starting with HTML</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS Section -->
+    <div class="resource-section">
+      <h3 class="category-heading">CSS</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+            <img src="/Documentation/Images/css.png" alt="Starting with CSS" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Starting with CSS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT Section -->
+    <div class="resource-section">
+      <h3 class="category-heading">JAVASCRIPT</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+            <img src="/Documentation/Images/js1.png" alt="Starting with JavaScript" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Starting with JavaScript</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">
+            <img src="/Documentation/Images/js_guide.jpeg" alt="JavaScript Guide" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">JavaScript Guide</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Based Learning Section -->
+    <div class="resource-section">
+      <h3 class="category-heading">Project Base Learning</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://www.coursera.org/learn/website-coding" target="_blank">
+            <img src="/Documentation/Images/WebDev_Project1.png" alt="Coursera" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Coursera</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://www.codewithfaraz.com/article/103/50-html-css-and-javascript-projects-with-source-code-for-beginners" target="_blank">
+            <img src="/Documentation/Images/projects2.jpg" alt="Projects for Beginners - CodeWithFaraz" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Projects for Beginners - CodeWithFaraz</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">
+            <img src="/Documentation/Images/fcc.webp" alt="FreeCodeCamp" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">FreeCodeCamp</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Dev Courses Section -->
+    <div class="resource-section">
+      <h3 class="category-heading">Web Dev Courses</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://www.educative.io/courses/learn-html-css-javascript-from-scratch" target="_blank">
+            <img src="/Documentation/Images/course1.jpg" alt="Learn From Scratch - Educative" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Learn From Scratch - Educative</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/" target="_blank">
+            <img src="/Documentation/Images/course2.png" alt="Explained for Beginners - FreeCodeCamp" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Explained for Beginners - FreeCodeCamp</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">
+            <img src="/Documentation/Images/course3.jpeg" alt="Learn Web Development - MDN Web Docs" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Learn Web Development - MDN Web Docs</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FullStack Roadmap - Misbah's Library</title>
-    <link rel="stylesheet" href="Src\Css\style.css">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/images/favicon.ico">
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <img src="../assets/images/logo.png" alt="Logo" class="logo">
             <h1>Misbah's Code Library</h1>
         </div>
         <nav class="nav">
             <button class="nav-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-list">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#login">Login</a></li>
-                <li><a href="#register">Register</a></li>
+                <li><a href="../html/index.html" class="active">Home</a></li>
+                <li><a href="auth/login.html">Login</a></li>
+                <li><a href="auth/register.html">Register</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
             </ul>
         </nav>
@@ -28,20 +28,22 @@
         <aside class="sidebar" id="sidebar">
             <h2>Learning Path</h2>
             <div class="roadmap-menu">
-                <div class="menu-item" data-content="frontend">
+                <a href="#" class="menu-item" data-content="getting_started/index">
+                    <span>🚀</span> Getting Started
+                </a>
+                <a href="#" class="menu-item" data-content="frontend/index">
                     <span>🎨</span> Frontend Development
-                </div>
-                <div class="menu-item" data-content="backend">
+                </a>
+                <a href="#" class="menu-item" data-content="backend/index">
                     <span>⚙️</span> Backend Development
-                </div>
-                <div class="menu-item" data-content="database">
-                    <span>🗃️</span> Databases
-                </div>
+                </a>
+                <a href="#" class="menu-item" data-content="devops/index">
+                    <span>🛠️</span> DevOps
+                </a>
             </div>
         </aside>
 
         <main class="content" id="content">
-            <!-- Dynamic content will be loaded here -->
             <section class="welcome-message">
                 <h2>Welcome to FullStack Journey!</h2>
                 <p>Select a learning path from the sidebar to begin</p>
@@ -49,6 +51,6 @@
         </main>
     </div>
 
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

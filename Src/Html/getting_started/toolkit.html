@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Toolkit</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* Additional styles for resource pages */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .resource-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--secondary-color);
+    }
+
+    .resource-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .resource-title {
+      color: var(--primary-color);
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .category-heading {
+      color: var(--secondary-color);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .intro-text {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="roadmap-content">
+    <h1>Developer Toolkit</h1>
+    <p class="intro-text">Click on the images to access learning tutorials</p>
+
+    <div class="resource-section">
+      <h3 class="category-heading">Git</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://learn.microsoft.com/en-us/training/modules/intro-to-git/" target="_blank">
+            <img src="/Documentation/Images/Introduction_git.png" alt="Introduction to Git" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Introduction to Git</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://git-scm.com/videos" target="_blank">
+            <img src="/Documentation/Images/Git.png" alt="Git Tutorial" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Git Tutorial</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resource-section">
+      <h3 class="category-heading">GitHub</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-github/" target="_blank">
+            <img src="/Documentation/Images/github2.jpg" alt="Introduction to GitHub" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Introduction to GitHub</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resource-section">
+      <h3 class="category-heading">VS Code</h3>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-visual-studio-code/" target="_blank">
+            <img src="/Documentation/Images/vs.png" alt="Introduction to VS Code" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">Introduction to VS Code</h4>
+          </div>
+        </div>
+        <div class="resource-card">
+          <a href="https://code.visualstudio.com/docs" target="_blank">
+            <img src="/Documentation/Images/vs_doc.webp" alt="VS Code Documentation" class="resource-image">
+          </a>
+          <div class="resource-content">
+            <h4 class="resource-title">VS Code Documentation</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
