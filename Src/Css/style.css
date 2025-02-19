@@ -153,7 +153,7 @@ body {
     text-decoration: none;
     color: var(--text-color);
     display: block;
-    position: relative; /* Add this for proper link positioning */
+    position: relative; 
   }
   
   .path-card:hover {
@@ -245,3 +245,5 @@ body {
   .path-card p {
     color: #666;
   }
+
+  
