@@ -73,12 +73,46 @@
 
 
 
+// Add to the top of your script.js
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+}
 
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+}
 
+function updateThemeIcon(theme) {
+    const themeIcon = document.querySelector('.theme-icon');
+    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+// Add to DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize theme
+    initializeTheme();
+    
+    // Add theme toggle handler
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    
+    
+});
+
+// Toggle theme button  ends here
 
 
 document.addEventListener('DOMContentLoaded', () => {
     // Toggle mobile menu
+    // initializeTheme();
+    // document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
     const navToggle = document.querySelector('.nav-toggle');
     const navList = document.querySelector('.nav-list');
     
